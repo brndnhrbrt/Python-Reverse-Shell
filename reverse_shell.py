@@ -125,7 +125,7 @@ def client_loop(target_ip, target_port):
                     file_name = buffer.split(" #upload# ")[0].rstrip()
                     file_contents = buffer.split(" #upload# ")[1]
                     try:
-                        upload_file = open(file_name, "W")
+                        upload_file = open(file_name, "w")
                         upload_file.write(file_contents)
                     except:
                         message = "Error uploading file"
