@@ -11,12 +11,12 @@ def help():
     print 'python reverse_shell.py -l -p <desired_port>'
     print 'python reverse_shell.py -t <target_port> -p <target_ip>'
     print
-    print '-l --listen\t\t\t\t activate listen_mode'
-    print '-t --target\t\t\t\t target_ip, host_ip if listen_mode'
-    print "-p --port\t\t\t\t target_port, host_port if listen_mode"
-    print "-h --help\t\t\t\t usage promt"
-    print '<save_name> #download# <file_name>\t downloads <file_name> and saves as <save_name>'
-    print '<save_name> #uploads# <file_name>\t uploads <file_name> and saves as <save_name>'
+    print '-l --listen\t\t\t\t activate server mode'
+    print '-t --target\t\t\t\t server_ip (default 0.0.0.0)'
+    print "-p --port\t\t\t\t server_port"
+    print "-h --help\t\t\t\t help"
+    print '<save_as_name> #download# <file_name>\t downloads <file_name> and saves as <save_as_name>'
+    print '<save_as_name> #upload# <file_name>\t uploads <file_name> and saves as <save_as_name>'
     print
     sys.exit(0)
 
